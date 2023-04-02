@@ -1,214 +1,835 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global TCM Services</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/TCM (1)32.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/TCM (1)32.png">
-    <link rel="icon" sizes="16x16" href="assets/img/TCM (1)16.png">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    }
-                }
-            }
+    <meta charset="utf-8" />
+    <title>Global TCM Service</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Global TCM Service" />
+    <meta name="keywords" content="Global TCM Service premium, marketing, multipurpose" />
+    <meta content="Themesdesign" name="author" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/globaltcmlogo.png" />
+
+    <!-- tinyslider -->
+    <link rel="stylesheet" href="css/tiny-slider.css" />
+    
+
+    <!-- css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/ce237f0620.js" crossorigin="anonymous"></script>
+    <style>
+     
+        @import url("https://fonts.googleapis.com/css?family=Roboto");
+        @-webkit-keyframes come-in {
+          0% {
+            -webkit-transform: translatey(100px);
+                    transform: translatey(100px);
+            opacity: 0;
+          }
+          30% {
+            -webkit-transform: translateX(-50px) scale(0.4);
+                    transform: translateX(-50px) scale(0.4);
+          }
+          70% {
+            -webkit-transform: translateX(0px) scale(1.2);
+                    transform: translateX(0px) scale(1.2);
+          }
+          100% {
+            -webkit-transform: translatey(0px) scale(1);
+                    transform: translatey(0px) scale(1);
+            opacity: 1;
+          }
         }
-    </script>
+        @keyframes come-in {
+          0% {
+            -webkit-transform: translatey(100px);
+                    transform: translatey(100px);
+            opacity: 0;
+          }
+          30% {
+            -webkit-transform: translateX(-50px) scale(0.4);
+                    transform: translateX(-50px) scale(0.4);
+          }
+          70% {
+            -webkit-transform: translateX(0px) scale(1.2);
+                    transform: translateX(0px) scale(1.2);
+          }
+          100% {
+            -webkit-transform: translatey(0px) scale(1);
+                    transform: translatey(0px) scale(1);
+            opacity: 1;
+          }
+        }
+        * {
+          margin: 0;
+          padding: 0;
+        }
+        
+        html, body {
+
+          font-family: 'Roboto', sans-serif;
+        }
+       
+        
+        @media screen and (max-width: 767px) {
+            .app-img{
+                height:200px !important;
+            }
+            .mb{
+                margin-bottom: 2px;
+            }
+}
+@media screen and (min-width: 1024px) {
+  
+}
+        
+.border-right {
+    border-right: 1px #dee2e6 solid;
+    padding-right: 20px;
+}
+        
+        
+    </style>
+    <script type="text/javascript" src="https://typewriter.luukdev.repl.co/TypeWriter.js"></script>
 </head>
 
-<body>
-
-
-    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5  dark:bg-gray-800 sticky top-0 z-50">
-        <div class="container flex flex-wrap justify-between items-center mx-auto">
-            <a  class="flex items-center">
-                <!-- <img src="assets/img/TCM (1).png" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo"> -->
-                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white font-mono">Global TCM Service</span>
-            </a>
-            <div class="flex md:hidden md:order-2">
-
-                <button data-collapse-toggle="mobile-menu-3" type="button"
-                    class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                    aria-controls="mobile-menu-3" aria-expanded="false" id="mobile-menu-button">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                    <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </button>
-            </div>
-            <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="mobile-menu-3">
-                <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
-                    <li>
-                        <a class="block py-2 pr-4 pl-3  rounded md:bg-transparent hover:text-blue-500 md:p-0 dark:text-white"
-                            onclick="scrollSmoothTo('home')">Home</a>
-                    </li>
-                    <li>
-                        <a onclick="scrollSmoothTo('aboutus')"
-                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
-                    </li>
-                    <li>
-                        <a onclick="scrollSmoothTo('services')"
-                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-
-
-    <div class="  text-center py-36" id="home" style="background-image: url('assets/img/aboutus.jpg')">
-        <div class="font-semibold text-2xl mb-3 mx-2 font-mono ">
-            WELCOME TO Global TCM SERVICES
-        </div>
-        <p>
-            Explore our services go down to services section
-        </p>
-        <div class="text-red-700 absolute right-12 md:text-left xs:text:center font-semibold ">
-            <p class="mb-1">Contact us</p>
-            <p>Email :<a class="text-black" href="mailto:globaltcmservices@gmail.com"> globaltcmservices@gmail.com</a></p> 
-            <p>Varsha : <a href="tel:+918356094990" class="text-black">+91 83560 94990</a></p>
-            <p>Rahul  :<a href="tel:+918356080899" class="text-black">+91 83560 80899</a> </p>
-         </div>
-    </div>
- 
-    <div class="bg-black py-10">
-       
-        <div id="services">
-            <p class="text-white font-semibold mb-10 text-center text-2xl font-mono">- Services we offer -</p>
-            <div class="grid px-6 xs:grid-cols-1 md:grid-cols-3 gap-4">
-                <div class="max-w-sm rounded text-white bg-black overflow-hidden shadow-lg ">
-                    <img class="w-full h-96" src="assets/img/maidcard2.jpg" alt="maid services">
-                    <div class="px-6 py-4">
-                        <div class="font-bold text-xl mb-2  ">Maid Services</div>
-                        <p class=" text-base">
-                            We provide maid like:
-                                a.	Housekeeping 
-                                b.	Cooking
-                                c.	Elder care 
-                                d.	Babysitter. 
-                                Our maid are well trained. They are properly registered with our company with police verification.
-
-                        </p>
-                    </div>
-                    <div class="px-6 pt-4 pb-2">
-                        <span
-                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#maid</span>
-                        <span
-                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#cleaning</span>
-                        <span
-                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#massage</span>
-                    </div>
-                </div>
-                <a href="Tour.html">
-                    <div class="max-w-sm rounded text-white bg-black overflow-hidden shadow-lg ">
-                        <img class="w-full h-96" src="assets/img/travel.jpeg" alt="travel services">
-                        <div class="px-6 py-4">
-                            <div class="font-bold text-xl mb-2">Tourism</div>
-                            <p class=" text-base">
-                                We provide in Mumbai hotel services near beach with few amount . Location view directly from hotel to sea.
-                            </p>
-                        </div>
-                        <div class="px-6 pt-4 pb-2">
-                            <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                            <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                            <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-                        </div>
-                        <span class=" px-6 text-yellow-400">Click Here To Explore More</span>
-                    </div>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="67">
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
+        <div class="container">
+            <a href="./index.html" class="navbar-brand me-5">
+                    <img src="images/Global TCM Service-Color-logo.png" class="logo-dark" alt="" height="40" />
                 </a>
-                <div class="max-w-sm rounded text-white bg-black overflow-hidden shadow-lg ">
-                    <img class="w-full w-full h-96" src="assets/img/celibcard.jpg" alt="celibrity services">
-                    <div class="px-6 py-4">
-                        <div class="font-bold text-xl mb-2">Celebrity Popularity</div>
-                        <p class=" text-base">
-                            We provide service those people who want to become a celebrity our company promote them by the medium of Photo session, Reels and social networking. We charge a very few amount.   
+            <a href="javascript:void(0)" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggle-icon"><i data-feather="menu"></i></span>
+                </a>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav navbar-center me-auto mt-lg-0 mt-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#feature">Features</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Services</a>
+                    </li>
+                     <!-- <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li> -->
+                
+                   
+                   
+                </ul>
+                <div class="mb-4 mb-lg-0">
+                    <a href="#" class="btn btn-sm nav-btn btn-primary mb-4 mb-lg-0 ms-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </nav>
+    <!-- end navbar -->
+
+    <!-- start hero -->
+    <section style="background-image:url('images/hero-5-bg.png')" class="hero-1 bg-white position-relative d-flex align-items-center justify-content-center overflow-hidden" style="background-image: url(images/hero-1-bg.png);" id="home">
+
+        <div class="container" >
+            <div class="row align-items-center text-center text-lg-start">
+                <div class="col-lg-6 mt-4 pt-2">
+                    <h6 class="text-primary mb-3" >Connect With <b style="font-size:20px">Global TCM Service</b></h6>
+                    <h1 class="ml11 mb-2" style="color:#50C594 !important">
+                        <span class="text-wrapper">
+                              <!-- <span class="line line1"></span> -->
+
+                              <!-- <span id ='main_text' class='letter'>sdf</span> -->
+                        <span id="main_text" class="letter pb-0"></span> 
+                      
+                        </span>
+
+                        <!-- <span class="text-wrapper">
+                        <span class="line line1"></span>
+                      <span class="letters pb-0">Robust Websites</span> -->
+                      <!-- <span class="letters1 pb-0">1 Websites</span>
+                      <span class="letters2 pb-0">2 Websites</span>
+                      <span class="letters3 pb-0">3 Websites</span> -->
+                    
+                      </span>
+                    </h1>
+                    <!-- <h5 class="my-4">& Take your company to the <b>5 Billion+</b> users</h5> -->
+
+                    <!-- <p class="text-muted mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit <br> maxime vitae labore aliquam odit est illo ducimus, dolores neque expedita.</p> -->
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary mt-4">Let's ChitChat<i data-feather="arrow-right" class="icon-xs icon"></i> </a>
+                </div>
+                <div class="col-lg-6 mt-lg-4 pt-2 mt-5">
+                    <img class="hero-img" src="images/hero-1-img.png" alt="">
+                    
+                </div>
+
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end hero -->
+
+    <!-- start solution -->
+    <section class="service-section" style="padding:40px;" id="feature" >
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-12 mb-4">
+                    <h4 class="fw-semibold mb-3"><b style="font-size:30px">Choose Global TCM Service</b></h4>
+                    <h5 class="text-muted fw-normal">If you don't want to compromise on these</h5>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-12">
+                    <div class="feature-slider">
+                        <div>
+                            <div class="mt-4 pt-2">
+                                <div class="solution border rounded position-relative px-4 py-5 ">
+                                    <i data-feather="gitlab" class="sw-1 mb-4 icon-xxl sol-icon box-text-color"></i>
+                                    <h5 class="lh-base box-text-color fs-16 mb-2">On-Time Service</h5>
+                                    <!-- <a class="text-muted"><span class="fw-semibold fs-15 text-dark">$2.98</span> - Month</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="mt-4 pt-2">
+                                <div class="solution border rounded position-relative px-4 py-5">
+                                    <i data-feather="layers" class="sw-1 mb-4 icon-xxl sol-icon"></i>
+                                    <h5 class="lh-base fs-16 mb-2">Quick & Smooth Work</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div>
+                            <div class="mt-4 pt-2">
+                                <div class="solution border rounded position-relative px-4 py-5">
+                                    <i data-feather="cloud" class="sw-1 mb-4 icon-xxl sol-icon"></i>
+                                    <h5 class="lh-base fs-16 mb-2">Realtime Support</h5>
+                                    <a class="text-muted"><span class="fw-semibold fs-15 text-dark">$0.59</span> - Month</a>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <div>
+                            <div class="mt-4 pt-2">
+                                <div class="solution border rounded position-relative px-4 py-5">
+                                    <i data-feather="voicemail" class="sw-1 mb-4 icon-xxl sol-icon"></i>
+                                    <h5 class="lh-base fs-16 mb-2">Optimization & Security</h5>
+                                     <a class="text-muted"><span class="fw-semibold fs-15 text-dark">$0.58</span> - Month</a>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div>
+                            <div class="mt-4 pt-2">
+                                <div class="solution border rounded position-relative px-4 py-5">
+                                    <i data-feather="layers" class="sw-1 mb-4 icon-xxl sol-icon"></i>
+                                    <h5 class="lh-base fs-16 mb-2">Safety & Reliability</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="mt-4 pt-2">
+                                <div class="solution border rounded position-relative px-4 py-5">
+                                    <i data-feather="mail" class="sw-1 mb-4 icon-xxl sol-icon"></i>
+                                    <h5 class="lh-base fs-16 mb-2">Quality Over Quantity</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="mt-4 pt-2">
+                                <div class="solution border rounded position-relative px-4 py-5">
+                                    <i data-feather="bar-chart-2" class="sw-1 mb-4 icon-xxl sol-icon"></i>
+                                    <h5 class="lh-base fs-16 mb-2">Professional Teams</h5>
+                                </div>
+                            </div>
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end solution -->
+
+
+    <!-- start feature -->
+    <section class="section bg-light overflow-hidden">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img class="img-container" src="images/chat.png" alt="">
+                </div>
+                <div class="col-lg-6 mt-lg-0 mt-5 pt-lg-0 pt-4">
+                    <h3 class="fw-semibold lh-base mb-4"> Customer satisfaction is what excites us and  not the money</h3>
+                    <h5 class="text-muted fw-normal">We're always here to help you.</h5>
+                    <div class="row">
+                        <div class="col-md-6 ">
+                            <div class="p-4 border rounded mt-4 solution">
+                                <span class="fw-semibold fs-18"><i data-feather="star" class="text-warning icon-xs icon me-2"></i>4.9</span><br><br>
+                                
+                                <!-- <h6 class="fw-semibold fs-14 my-3">See what customer Gossips about us</h6> -->
+                                <p class="text-muted">Here are some customer reviews</p>
+                                <br>
+
+                                <div class="ser-link " style="text-align: right;"><a href="#client" class="text-dark ">           <i data-feather="arrow-right" class="icon-xs"></i></a></div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-6">
+                            <div class="p-4 border rounded mt-4 solution">
+                                <span class="fw-semibold fs-18"><i data-feather="award" class="text-warning icon-xs icon me-2"></i>Projects</span>
+                                <br><br>
+                                <p class="text-muted">See All our Creativity</p>
+                                <br><br>
+                                <div class="ser-link " style="text-align: right;"><a href="#projects" class="text-dark ">           <i data-feather="arrow-right" class="icon-xs"></i></a></div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- end feature -->
+       <section class="section" id="client" >
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-12 mb-4">
+                    <h4 class="fw-semibold mb-3">Here are some customer reviews</h4>
+                    <h5 class="text-muted fw-normal">We know you love IT
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-12 mt-4 pt-2">
+                  <div class="testi-slider">
+                        <div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="client-review">
+                                        <div class="name position-relative">
+                                           
+                                            <h5 class="mt-4">Vijay Kamble</h5>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-6 mt-5 pt-5">
+                                        <div class="cli-text text-center text-muted h5">
+                                            <p>It’s really awesome... you people are really professional & the person u recommend is very Lovin, caring & hard working.....she is really taking good care of my baby very genuinely & properly ...keep it up with a such excellent services. All the best guys...
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="client-review">
+                                        <div class="name position-relative">
+                                            
+                                            <h5 class="mt-4"> Kiran Aapte</h5>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-6 mt-5 pt-5">
+                                        <div class="cli-text text-center text-muted  h5">
+                                            <p>Got immediate response.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="client-review">
+                                        <div class="name position-relative">
+                                            
+                                            <h5 class="mt-4">Vikas Patil </h5>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-6 mt-5 pt-5">
+                                        <div class="cli-text text-center text-muted  h5">
+                                            <p>
+                                                Professionally managed, understand your requirements & provide the help accordingly
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="client-review">
+                                        <div class="name position-relative">
+                                           
+                                            <h5 class="mt-4">Sandeep Gaikwad</h5>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-6 mt-5 pt-5">
+                                        <div class="cli-text text-center text-muted  h5">
+                                            <p>
+                                                I required a maid so I registered on their website. Maid was provided to me as per my requirements. I am happy with their services and will suggest all of my friends and neighbours if they need such services in future...!!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- start services -->
+    <section class="section" id="service">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-12 mb-4">
+                    <h4 class="fw-semibold mb-3"><b style="font-size:30px">Global TCM Service Platter</b></h4>
+                    <h5 class="text-muted fw-normal">We are offering these services!!</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mt-4 pt-2">
+                    <div class="service rounded px-4 py-md-5 py-3">
+                        <div class="bg-info p-3 d-inline-block rounded-circle">
+                            <i data-feather="users" class="text-white"></i>
+                        </div>
+                        <h6 class="my-4">HOUSEKEEPING</h6>
+                        <p class="text-muted mb-4">
+                            When it comes to Housekeeping safety is at most important. All our maids are police verified.
                         </p>
+                        <!-- <div class="ser-link"><a href="#" class="fs-15 text-dark fw-medium" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Us <i data-feather="arrow-right" class="icon-xs"></i></a></div> -->
                     </div>
-                    <div class="px-6 pt-4 pb-2">
-                        <span
-                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                        <span
-                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#fame</span>
-                       <!--  <span
-                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#</span> -->
+                </div>
+                <div class="col-md-4 mt-4 pt-2">
+                    <div class="service rounded px-4 py-md-5 py-3 active">
+                        <div class="bg-warning p-3 d-inline-block rounded-circle">
+                            <i data-feather="cast" class="text-white"></i>
+                        </div>
+                        <h6 class="my-4">COOKING</h6>
+                        <p class="text-muted mb-4">
+                            We have the best cooks in the industry. Our pro maids can make best homemade food for you.
+
+                        </p>
+                        <!-- <div class="ser-link"><a href="#" class="fs-15 text-dark fw-medium" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Us <i data-feather="arrow-right" class="icon-xs"></i></a></div> -->
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4 pt-2">
+                    <div class="service rounded px-4 py-md-5 py-3">
+                        <div class="bg-danger p-3 d-inline-block rounded-circle">
+                            <i data-feather="grid" class="text-white"></i>
+                        </div>
+                        <h6 class="my-4">ELDER CARE</h6>
+                        <p class="text-muted mb-4">
+                           Elderly people need noting but love and care. Kindness and loveliness  is what we look for when we hire people for elderly care.
+
+                        </p>
+                        <!-- <div class="ser-link"><a href="#" class="fs-15 text-dark fw-medium" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Us <i data-feather="arrow-right" class="icon-xs"></i></a></div> -->
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4 pt-2">
+                    <div class="service rounded px-4 py-md-5 py-3">
+                        <div class="bg-success p-3 d-inline-block rounded-circle">
+                            <i data-feather="file" class="text-white"></i>
+                        </div>
+                        <h6 class="my-4">BABYSITTING</h6>
+                        <p class="text-muted mb-4">
+                            Babies are soft and lovely creatures. Let us handle them with care while you do the important business.
+
+                        </p>
+                        <!-- <div class="ser-link"><a href="#" class="fs-15 text-dark fw-medium" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Us <i data-feather="arrow-right" class="icon-xs"></i></a></div> -->
+                    </div>
+                </div>
+                <!-- <div class="col-md-4 mt-4 pt-2">
+                    <div class="service rounded px-4 py-md-5 py-3">
+                        <div class="bg-secondary p-3 d-inline-block rounded-circle">
+                            <i data-feather="droplet" class="text-white"></i>
+                        </div>
+                        <h6 class="my-4">KYC ONBOARDING SOLUTIONS</h6>
+                        <p class="text-muted mb-4">
+                            At Global TCM Service, we understand the importance of efficient and reliable KYC (Know Your Customer) onboarding solutions for businesses. That's why we offer comprehensive KYC onboarding solutions designed to streamline your customer verification process and ensure regulatory compliance.
+
+                        </p>
+                        - <div class="ser-link"><a href="#" class="fs-15 text-dark fw-medium" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Us <i data-feather="arrow-right" class="icon-xs"></i></a></div> 
+                    </div>
+                </div> -->
+                <div class="col-md-4 mt-4 pt-2">
+                    <div class="service rounded px-4 py-md-5 py-3">
+                        <div class="bg-dark p-3 d-inline-block rounded-circle">
+                            <i data-feather="settings" class="text-white"></i>
+                        </div>
+                        <h6 class="my-4">GET SERVICE YOU WANT</h6>
+                        <p class="text-muted mb-4">
+                            Please reach us and get the service you want.
+
+                        </p>
+                        <!-- <div class="ser-link"><a href="#" class="fs-15 text-dark fw-medium" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Us <i data-feather="arrow-right" class="icon-xs"></i></a></div> -->
+                        <a href="#" class="btn btn-sm nav-btn btn-primary mb-4 mb-lg-0 ms-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Us</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="aboutus" class="m-6">
-            <p class="text-white font-semibold mb-10 text-center text-2xl font-mono">- About us -</p>
-            <div class="max-w-sm w-full lg:max-w-full text-white bg-black lg:flex">
-                <div class="h-48 lg:h-auto lg:w-96 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-                    style="background-image: url('assets/img/aboutus.jpg')" title="Woman holding a mug">
+    </section>
+   
+
+
+
+
+    <!-- start footer -->
+    <footer class="footer bg-dark" id="footer-background">
+        <div class="container">
+            <div class="row">
+                 <div class="col-lg-4 col-sm-6">
+                    <a href="./index.html">
+                            <img src="images/Global TCM Service-Color-logo.png" alt="" height="22" />
+                        </a>
+                    <h6 class="mt-4 pt-2 text-white">Locate Us</h6>
+                    <h6 class="mt-4 pt-2 text-white">Office </h6>
+                    <p class="mt-3 text-muted fs-15">ROOM NO.5 MANOHAR NAGAR SAKI VIHAR ROAD MUMBAI MUMBAI SUBURBAN GREATER MUMBAI (MCorp.) part  400072
+                    </p>
+                 <!--   <h6 class="mt-4 pt-2 text-white">Office 2</h6>
+                    
+                    
+                    <p class="mt-3 text-muted fs-15">FLAT NO.201,C WING, ASHTAVINAYAK RESIDENCY,<br>BADLAPUR, AMBARNATH, Kanhor, Thane, Maharashtra,<br>421503
+                    </p>
+                    <h6 class="text-primary fw-medium fs-15 mt-4">801-468-2313</h6>
+                    <h6 class="text-primary fw-medium fs-15 mt-2">591-578-1234</h6>
+ -->
+
                 </div>
-                <div
-                    class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400  rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-                    <div class="mb-8">
-                        Our company is registered. Registered nos. UDYAM-MH-18-0131060 
-                        Our branch located at Andheri. We are certified with all clear documents.
-                        We Global TCM Services deals with 3types of business.
-                        <p class="my-2">1.	Maid Services: We provide maid like: </p>
-                            <p>a.	Housekeeping </p>
-                           <p> b.	Cooking</p>
-                            <p>c.	Elder care </p>
-                            <p> d.	Babysitter.</p>
-                        <p>Our maid are well trained. They are properly registered with our company with police verification.</p>
-
-                        <p class="my-2"> 2.	Tourism:</p>
-                            <p>We provide in Mumbai hotel services near beach with few amount . Location view directly from hotel to sea.</p>
-
-                        <p class="my-2">3.	Celebrity Popularity:</p>
-                            <p>We provide service those people who want to become a celebrity our company promote them by the medium of Photo session, Reels and social networking. We charge a very few amount.</p>   
-
-
+                <!-- <div class="col-lg-3 col-sm-6">
+                    <h6 class="mb-3 mt-sm-0 mt-5 text-white">Others Links</h6>
+                    <ul class="list-unstyled footer-list">
+                        <li class="py-2"><a class="fs-15" href="./aboutus.html"><span class="icon fs-12 me-2">∎</span> About Us</a></li>
+                        <li class="py-2"><a class="fs-15" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="icon fs-12 me-2">∎</span> Contact Us</a></li>
+                        <li class="py-2"><a class="fs-15" href="#"><span class="icon fs-12 me-2">∎</span> Team</a></li>
+                        <li class="py-2"><a class="fs-15" href="./privacy_policy.html"><span class="icon fs-12 me-2">∎</span> Privacy Policy</a></li>
+                        <li class="py-2"><a class="fs-15" href="./terms_and_conditions2.html"><span class="icon fs-12 me-2">∎</span> Terms & Condition</a></li>
+                        <li class="py-2"><a class="fs-15" href="./refund_policy.html"><span class="icon fs-12 me-2">∎</span> Refund Policy</a></li>
+                        <li class="py-2"><a class="fs-15" href="#"><span class="icon fs-12 me-2">∎</span> Join Our Global TCM Service</a></li>
+                        
+                    </ul>
+                </div> -->
+                <!-- <div class="col-lg-4 offset-lg-1">
+                    <div class="card rounded border-0 mt-sm-0 mt-4">
+                        <div class="map rounded">
+                            <a href="#" class="btn btn-light text-dark position-absolute top-50 start-50 translate-middle map-btn">View Map</a>
+                            <div class="bg-overlay rounded position-absolute top-0 right-0 bottom-0 left-0"></div>
+                            <iframe class="rounded" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6030.418742494061!2d-111.34563870463673!3d26.01036670629853!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1471908546569" width="100%" height="230" style="border: 0" allowfullscreen></iframe>
+                        </div>
                     </div>
+                </div> -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </footer>
+    <!-- end footer -->
+
+    <!-- start footer alter -->
+    <div class="footer-alt bg-dark" >
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-12">
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script> &copy; Copyright by <a href="" class="text-muted">Global TCM Service</a>
+                </div>
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end footer alter -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Get In Touch</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-2"> Make payment of 20 Rs to raise Inquiry and send transaction id with Inquiry form</div>
+                    <form method="post" name="myForm" onsubmit="return validateForm()">
+                        <span id="error-msg"></span>
+                        <div class="row">
+                            
+                            <div class=" d-flex align-items-center justify-content-center col-5 border-right mb-5">
+                               
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="text-center">
+                                            <div class="card-body">
+                                                <p class="m-2 text-success">Pay Using UPI QR Code </p>
+                                                <div class="qr-code"></div>
+                                                <div class="">
+                                                    <p class="m-4">--- OR ---</p>
+                                                    <p class="text-success">Pay on following Account number</p>
+                                                    <p class="mb-0">Account No: <span class="fw-medium form-label">60410577484</span></p>
+                                                    <p class="mb-0">IFSC Code: <span class="fw-medium form-label"> MAHB0001756</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                             </div>
+                             
+                            
+
+                            <div class="col-7 ml-4">
+                                <div class="row">
+                                   
+                                    <div class="col-md-6 mb-3">
+                                        <label class="fw-medium form-label" for="name">Name</label>
+                                        <input type="text" class="form-control" placeholder="Your name" id="name" />
+                                    </div>
+                                    <!-- end col -->
+                                    
+                                     <div class="col-md-6 mb-3">
+                                        <label class="fw-medium form-label" for="number">Contact</label>
+                                        <input type="text" class="form-control" placeholder="+91 1234 5678 90" id="number" />
+                                    </div>
+                                    <!-- end col -->
+                                    
+                                     <div class="col-md-6 mb-3">
+                                        <label class="fw-medium form-label" for="number">Alternate Contact</label>
+                                        <input type="text" class="form-control" placeholder="+91 1234 5678 90" id="alt_number" />
+                                    </div>
+                                    <!-- end col -->
+                                    <div class="col-md-6 mb-3">
+                                        <label class="fw-medium form-label" for="email">Email</label>
+                                        <input type="email" class="form-control" placeholder="Your email" id="email" />
+                                    </div>
+                                    <!-- end col -->
+                                    <div class="col-md-6 mb-3">
+                                        <label class="fw-medium form-label" for="email">Aadhaar</label>
+                                        <input type="text" class="form-control" placeholder="Your Aadhaar"  id="aadhaar" />
+                                    </div>
+                                    <!-- end col -->
+                                    <div class="col-md-6 mb-3">
+                                        <label class="fw-medium form-label" for="subject">Pin Code</label>
+                                        <input type="text" class="form-control" placeholder="Your Pin Code" id="pin_code" />
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="fw-medium form-label" for="subject">Transaction id</label>
+                                        <input type="text" class="form-control" placeholder="Your Transaction id" id="txn_id" />
+                                    </div>
+                                   
+                                    <div class="col-12 mb-3">
+                                        <label class="fw-medium form-label" for="comments">Address</label>
+                                        <textarea class="form-control" id="address" placeholder="Enter Your Address..." rows="5"></textarea>
+                                    </div>
+
+                                    <div class="col-12 mb-3">
+                                        <input id="checkbox" type="checkbox" required oninvalid="this.setCustomValidity('Read agree to terms and conditions ')"/>
+                                        <label for="checkbox"> I agree to these <a href="./terms_and_conditions.html">Terms and Conditions</a>.</label>
+                                    </div>
+
+                                    <!-- end col -->
+                                    <div class="col-12">
+                                        <input type="submit" id="submit" name="send" class="btn btn-primary mt-2" value="Send Information" />
+                                    </div>
+                                    <!-- end col -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+                    </form>
+                    <!-- end form -->
                 </div>
             </div>
         </div>
+        
     </div>
-    <div class="text-black bg-white text-center p-4">
-        © 2021 Copyright:
-        <a class="text-gray-800">Global TCM Services</a>
-    </div>
+    <!-- end modal -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- feather icon -->
+    <script src="js/feather.js"></script>
+
+    <!-- client-slider -->
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/tiny.init.js"></script>
+    <script src="js/TypeWriter.js"></script>
+
+    <!-- moving letter -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+
+
+    <!-- <script src="js/text-animation.init.js"></script> -->
+
+    <script src="js/app.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.globe.min.js"></script>
     
-
     <script>
-        const btn = document.querySelector("#mobile-menu-button");
-        const menu = document.querySelector("#mobile-menu-3");
-    
-        btn.addEventListener("click", () => {
-            menu.classList.toggle("hidden");
-        });
-    
-    
-        function scrollSmoothTo(elementId) {
-            var element = document.getElementById(elementId);
-            element.scrollIntoView({
-                block: 'start',
-                behavior: 'smooth'
+        new TypeWriter(`#main_text`, {
+            loop: true,
+            cursor: {
+              speed: 1500,
+          
+              id: 'cursor',
+              enabled: true
+            },
+            timeout: 50
+          })
+          .write(`Get Maid`)
+          .wait(2000)
+          .removeAll()
+          .write('Rest In Comfort')
+          .wait(2000)
+          .removeAll()
+          .write('Well Trained Maids')
+          .wait(2000)
+          .removeAll()
+          .write('Give Your House Work On Our Shoulders')
+          .wait(2000)
+          .removeAll()
+          .start();
+    var textWrapper = document.querySelector('#typewriter-effect-cursor');
+
+    VANTA.GLOBE({
+      el: "#footer-background",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 300.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: '#51c494',
+      size: 0.80,
+      backgroundColor: '#153355'
+    })
+    </script>
+    <!-- <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="5ef75739-90b4-4edd-95ba-359ab13d325a";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script>
+
+       document.addEventListener("DOMContentLoaded", function() {
+        function generate() {
+            let text= "upi://pay?pa="+'graniket2001@okaxis'+"&pn=Global TCM Services&am=20"
+            var qrcode = new QRCode(document.querySelector(".qr-code"), {
+                text: text,
+                width: 200, //default 128
+                height: 200,
+                colorDark : "#000000",
+                colorLight : "#ffffff",
+                correctLevel : QRCode.CorrectLevel.H
             });
+        } 
+        generate()
+    })
+
+
+
+
+
+    function validateForm() {
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+	var address = document.getElementById('address').value;
+    var number = document.getElementById('number').value;
+    var alt_number = document.getElementById('alt_number').value;
+    var aadhaar = document.getElementById('aadhaar').value;
+    var txn_id = document.getElementById('txn_id').value;
+    var pin_code = document.getElementById('pin_code').value;
+    document.getElementById("error-msg").style.opacity = 0;
+    document.getElementById('error-msg').innerHTML = "";
+    if (name == "" || name == null) {
+        document.getElementById('error-msg').innerHTML = "<div class='alert alert-danger error_message'>*Please enter a Name*</div>";
+        fadeIn();
+        return false;
+    }
+   
+    
+	if (number == "" || number == null) {
+        document.getElementById('error-msg').innerHTML = "<div class='alert alert-danger error_message'>*Please enter a number*</div>";
+        fadeIn();
+        return false;
+    }
+	if (alt_number == "" || alt_number == null) {
+        document.getElementById('error-msg').innerHTML = "<div class='alert alert-danger error_message'>*Please enter a alternate number*</div>";
+        fadeIn();
+        return false;
+    }
+    if (email == "" || email == null) {
+        document.getElementById('error-msg').innerHTML = "<div class='alert alert-danger error_message'>*Please enter a Email*</div>";
+        fadeIn();
+        return false;
+    }
+	if (aadhaar == "" || aadhaar == null) {
+        document.getElementById('error-msg').innerHTML = "<div class='alert alert-danger error_message'>*Please enter a number*</div>";
+        fadeIn();
+        return false;
+    }
+    if (pin_code == "" || pin_code == null) {
+        document.getElementById('error-msg').innerHTML = "<div class='alert alert-danger error_message'>*Please enter a pin code*</div>";
+        fadeIn();
+        return false;
+    }
+    if (txn_id == "" || txn_id == null) {
+        document.getElementById('error-msg').innerHTML = "<div class='alert alert-danger error_message'>*Please enter a transaction id*</div>";
+        fadeIn();
+        return false;
+    }
+    if (address == "" || address == null) {
+        document.getElementById('error-msg').innerHTML = "<div class='alert alert-danger error_message'>*Please enter a Address*</div>";
+        fadeIn();
+        return false;
+	}
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if (this.status == 200) {
+              document.getElementById('name').value="";
+              document.getElementById('email').value="";
+              document.getElementById('address').value="";
+              document.getElementById('number').value="";
+              document.getElementById('alt_number').value="";
+              document.getElementById('aadhaar').value="";
+              document.getElementById('txn_id').value="";
+              document.getElementById('pin_code').value="";
+              document.getElementById('error-msg').innerHTML = "<div class='alert alert-success error_message'>*Thank you! we have sent you email and we will contact you shortly.*</div>";
+              document.getElementById("error-msg").style.opacity = 1;
+              fadeIn();
         }
+    };
+    xhttp.open("POST", "http://16.16.98.130:8000/global_tcm/", true);
+    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhttp.send("name=" + name + "&email=" + email + "&address=" + address + "&number=" + number + "&alt_number=" + alt_number+"&pin_code=" + pin_code+"&aadhaar=" + aadhaar+"&txn_id=" + txn_id);
+    return false;
+}
     </script>
 </body>
-
 
 </html>
