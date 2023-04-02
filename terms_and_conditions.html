@@ -418,7 +418,7 @@
                                     <textarea class="form-control" id="address" placeholder="Enter Your Address..." rows="5"></textarea>
                                 </div>
                                 <div class="col-12 mb-3">
-                                    <input id="checkbox" type="checkbox" required oninvalid="this.setCustomValidity('Read agree to terms and conditions ')"/>
+                                    <input id="checkbox" type="checkbox" required oninvalid="this.setCustomValidity('Read and agree to terms and conditions ')" onchange="this.setCustomValidity(''); this.reportValidity();" />
                                     <label for="checkbox"> I agree to these <a href="./terms_and_conditions.html">Terms and Conditions</a>.</label>
                                 </div>
                                 <!-- end col -->

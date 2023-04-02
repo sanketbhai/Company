@@ -578,7 +578,7 @@
                         <span id="error-msg"></span>
                         <div class="row">
                             
-                            <div class=" d-flex align-items-center justify-content-center col-5 border-right mb-5">
+                            <div class=" d-flex align-items-center justify-content-center col-md-5 col-sm-12 border-right mb-5">
                                
                                 <div class="row">
                                     <div class="col-md-12">
@@ -602,7 +602,7 @@
                              
                             
 
-                            <div class="col-7 ml-4">
+                            <div class="col-md-7 col-sm-12 ml-4">
                                 <div class="row">
                                    
                                     <div class="col-md-6 mb-3">
@@ -647,7 +647,7 @@
                                     </div>
 
                                     <div class="col-12 mb-3">
-                                        <input id="checkbox" type="checkbox" required oninvalid="this.setCustomValidity('Read agree to terms and conditions ')"/>
+                                        <input id="checkbox" type="checkbox" required oninvalid="this.setCustomValidity('Read and agree to terms and conditions ')" onchange="this.setCustomValidity(''); this.reportValidity();" />
                                         <label for="checkbox"> I agree to these <a href="./terms_and_conditions.html">Terms and Conditions</a>.</label>
                                     </div>
 
