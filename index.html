@@ -824,7 +824,7 @@
               fadeIn();
         }
     };
-    xhttp.open("POST", "http://16.16.98.130:8000/global_tcm/", true);
+    xhttp.open("POST", "https://api.globaltcmservices.com/global_tcm/", true);
     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhttp.send("name=" + name + "&email=" + email + "&address=" + address + "&number=" + number + "&alt_number=" + alt_number+"&pin_code=" + pin_code+"&aadhaar=" + aadhaar+"&txn_id=" + txn_id);
     return false;
